@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@225355703:1551929133820" name="Set_User_Language" version="6.0.1">
+<config>
+<settings>
+<setting name="LanguageCode">var language = {Data.Session.language}
+var region = {Data.Session.region}
+language + '-' + region
+</setting>
+</settings>
+</config>
+</action_element>

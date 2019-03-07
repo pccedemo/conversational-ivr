@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@476806215:1551388902692" name="Get_User_Demo_Config" version="6.0.1">
+<config>
+<log>
+<data create_when="After" name="response_body">{Data.Element.Get_User_Demo_Config.response_body}</data>
+<data create_when="After" name="response_code">{Data.Element.Get_User_Demo_Config.status_code}</data>
+</log>
+<settings>
+<setting name="EndpointURL">https://branding.dcloud.cisco.com/api/v1/configure</setting>
+<setting name="HTTPMethod">GET</setting>
+<setting name="Parameters">'userId':'{Data.Session.userId}'</setting>
+<setting name="ignoreCertificateValidation">true</setting>
+<setting name="requireHttpAuthentication">false</setting>
+<setting name="headers"/>
+<setting name="useProxy">false</setting>
+<setting name="xpathexpression">$.configuration</setting>
+<setting name="connectTimeout">3000</setting>
+<setting name="readTimeout">5000</setting>
+</settings>
+<session_data>
+<data create_when="After" name="voice">{Data.Element.Get_User_Demo_Config.ttsVoice}</data>
+<data create_when="After" name="ttsEngine">{Data.Element.Get_User_Demo_Config.ttsEngine}</data>
+<data create_when="After" name="language">{Data.Element.Get_User_Demo_Config.language}</data>
+<data create_when="After" name="region">{Data.Element.Get_User_Demo_Config.region}</data>
+</session_data>
+<local_events>
+<local_event>
+<name>any</name>
+<eventlist>java.lang.Exception</eventlist>
+<type>Java Exception</type>
+</local_event>
+</local_events>
+</config>
+</action_element>

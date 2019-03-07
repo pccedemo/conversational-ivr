@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1252251146:1551388633009" name="Transcription_Outcome" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Transcription_Outcome" default_exit_state="error">
+        <exit_state name="transcript" conjugate="and">
+            <boolean check_existence="yes" value="true">
+                <local_variable name="transcript" />
+            </boolean>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1237957736:1551388633009" name="Google_Transcription" version="6.0.1">
+<config>
+<settings>
+<setting name="EndpointURL">{Data.Session.forking_url}</setting>
+<setting name="HTTPMethod">PUT</setting>
+<setting name="Parameters"/>
+<setting name="ignoreCertificateValidation">true</setting>
+<setting name="requireHttpAuthentication">false</setting>
+<setting name="headers">'Content-Type':'application/json'</setting>
+<setting name="body">{LocalVar.TranscribeBody}</setting>
+<setting name="useProxy">false</setting>
+<setting name="connectTimeout">2000</setting>
+<setting name="readTimeout">9000</setting>
+</settings>
+<local_events>
+<local_event>
+<name>any</name>
+<eventlist>java.lang.Exception</eventlist>
+<type>Java Exception</type>
+</local_event>
+</local_events>
+</config>
+</action_element>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@257609583:1551927834620" name="Copy_of_Prompt_Caller_Nuance" version="6.0.1">
+<config>
+<log>
+<data create_when="Before" name="filename">{Data.Element.Conversation_Message.outputText}</data>
+</log>
+<settings>
+<setting name="flush">true</setting>
+<setting name="sync">true</setting>
+<setting name="maxtime"/>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[{Data.Element.Conversation_Message.outputText}]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<local_events>
+<local_event>
+<name>any</name>
+<eventlist>java.lang.Exception</eventlist>
+<type>Java Exception</type>
+</local_event>
+</local_events>
+</config>
+</voice_element>

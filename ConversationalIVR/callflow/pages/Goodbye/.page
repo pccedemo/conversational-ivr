@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@726603166:1551388595541" name="Goodbye" version="6.0.1">
+<element height="46" id="Element@1013388857:1551389223233" name="Goodbye" type="Page Entry" width="98" x="407" y="93">
+<exit_states>
+<exit_state name="next" target="Element@1715983812:1551927834620"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1452875392:1551389227093" name="CVP Subdialog Return" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="166" x="272" y="479">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="46" id="Element@257609583:1551927834620" name="Copy_of_Prompt_Caller_Nuance" src="com.cisco.pt.cvp.vxml.extend.AudioEnhanced" type="Voice Element" width="220" x="350" y="264">
+<exit_states>
+<exit_state name="done" target="Element@1452875392:1551389227093"/>
+<exit_state name="Java Exception-any" target="Element@1452875392:1551389227093"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1982032721:1551927834620" name="Copy_of_Set_TTS" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="140" x="175" y="180">
+<exit_states>
+<exit_state name="done" target="Element@1951198386:1551927834620"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1951198386:1551927834620" name="Copy_of_Prompt_Caller_Google" src="com.cisco.pt.cvp.vxml.extend.AudioEnhanced" type="Voice Element" width="217" x="140" y="261">
+<exit_states>
+<exit_state name="done" target="Element@1452875392:1551389227093"/>
+<exit_state name="Java Exception-any" target="Element@1452875392:1551389227093"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1715983812:1551927834620" name="Copy_of_TTS_Engine" type="Decision" width="160" x="381" y="180">
+<exit_states>
+<exit_state name="google" target="Element@1982032721:1551927834620"/>
+<exit_state name="nuance" target="Element@257609583:1551927834620"/>
+</exit_states>
+</element>
+</page>

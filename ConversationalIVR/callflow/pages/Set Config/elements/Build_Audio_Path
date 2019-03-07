@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1955609540:1551929133835" name="Build_Audio_Path" version="6.0.1">
+<config>
+<settings>
+<setting name="AudioPath">var language = {Data.Session.language}
+var region = {Data.Session.region}
+var code = language + '-' + region
+
+String('http://branding.dcloud.cisco.com:8080/forkctrl-1.2/tts/' + code + '/' + {Data.Session.voice} + '/ULAW?text=')</setting>
+</settings>
+</config>
+</action_element>

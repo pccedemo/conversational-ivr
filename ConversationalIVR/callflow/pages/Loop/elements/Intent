@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@2001572022:1551388633009" name="Intent" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Intent" default_exit_state="continue">
+        <exit_state name="goodbye" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="Conversation_Message" variable="action" />
+                </data>
+                <constant_string value="smalltalk.greetings.bye" />
+            </string>
+        </exit_state>
+        <exit_state name="calculator" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="Conversation_Message" variable="action" />
+                </data>
+                <constant_string value="mortgage-calculator" />
+            </string>
+        </exit_state>
+        <exit_state name="escalate" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="Conversation_Message" variable="action" />
+                </data>
+                <constant_string value="escalate" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@876520630:1551388633009" name="Conversation_Message" version="6.0.1">
+<config>
+<settings>
+<setting name="EndpointURL">https://branding.dcloud.cisco.com/api/v1/conversation</setting>
+<setting name="HTTPMethod">GET</setting>
+<setting name="Parameters">'transcript':'{Data.Session.caller_transcript}'</setting>
+<setting name="ignoreCertificateValidation">true</setting>
+<setting name="requireHttpAuthentication">false</setting>
+<setting name="headers"/>
+<setting name="useProxy">false</setting>
+<setting name="xpathexpression">$</setting>
+<setting name="connectTimeout">0</setting>
+<setting name="readTimeout">0</setting>
+</settings>
+</config>
+</action_element>

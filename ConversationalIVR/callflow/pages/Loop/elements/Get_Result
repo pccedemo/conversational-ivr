@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1534096816:1551388633009" name="Get_Result" version="6.0.1">
+<config>
+<settings>
+<setting name="transcript">importPackage(com.audium.server.cvpUtil);
+var ret = JSONPathUtil.eval({Data.Element.Google_Transcription.response_body}, "$.transcript");
+String(ret);
+</setting>
+<setting name="error">importPackage(com.audium.server.cvpUtil);
+var ret = JSONPathUtil.eval({Data.Element.Google_Transcription.response_body}, "$.error");
+String(ret);
+</setting>
+</settings>
+<session_data>
+<data create_when="After" name="caller_transcript">{LocalVar.transcript}</data>
+</session_data>
+</config>
+</action_element>

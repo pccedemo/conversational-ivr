@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@19453121:1355794511759" name="Start" version="6.0.1">
+<element height="46" id="Element@26879441:1355794511759" name="Start Of Call" start_of_call="true" type="Page Entry" width="113" x="252" y="41">
+<exit_states>
+<exit_state name="next" target="Element@17551393:1355794674696"/>
+</exit_states>
+</element>
+<element height="46" id="Element@17551393:1355794674696" name="CVP Subdialog Start" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="155" x="231" y="142">
+<exit_states>
+<exit_state name="done" target="Element@13290702:1461082391233"/>
+</exit_states>
+</element>
+<element height="46" id="Element@13290702:1461082391233" name="Setup" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="80" x="269" y="228">
+<exit_states>
+<exit_state name="done" target="Element@476806215:1551388902692"/>
+</exit_states>
+</element>
+<element height="46" id="Element@476806215:1551388902692" name="Get_User_Demo_Config" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="179" x="221" y="331">
+<exit_states>
+<exit_state name="done" target="Element@1523213174:1551929257448"/>
+<exit_state name="Java Exception-any" target="Element@1523213174:1551929257448">
+<bendpoint>
+<dim1 x="-146" y="53"/>
+<dim2 x="-156" y="-46"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@1523213174:1551929257448" name="Set Config" type="Page Connector" width="105" x="254" y="435">
+<page_connector target="Element@640506703:1551929083538">Set Config<config/>
+</page_connector>
+</element>
+</page>
