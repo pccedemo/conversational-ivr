@@ -6,12 +6,7 @@
         <exit_state name="no config" conjugate="and">
             <boolean check_existence="yes" value="false">
                 <data>
-                    <element name="Get_User_Demo_Config" variable="language" />
-                </data>
-            </boolean>
-            <boolean check_existence="yes" value="false">
-                <data>
-                    <element name="Get_User_Demo_Config" variable="region" />
+                    <element name="Get_User_Demo_Config" variable="languageCode" />
                 </data>
             </boolean>
         </exit_state>

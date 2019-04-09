@@ -12,7 +12,7 @@
 </element>
 <element height="46" id="Element@13290702:1461082391233" name="Setup" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="80" x="269" y="228">
 <exit_states>
-<exit_state name="done" target="Element@476806215:1551388902692"/>
+<exit_state name="done" target="Element@786756037:1554829520679"/>
 </exit_states>
 </element>
 <element height="46" id="Element@476806215:1551388902692" name="Get_User_Demo_Config" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="179" x="221" y="331">
@@ -29,5 +29,11 @@
 <element height="46" id="Element@1523213174:1551929257448" name="Set Config" type="Page Connector" width="105" x="254" y="435">
 <page_connector target="Element@640506703:1551929083538">Set Config<config/>
 </page_connector>
+</element>
+<element height="46" id="Element@786756037:1554829520679" name="get vertical ID" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="122" x="546" y="233">
+<exit_states>
+<exit_state name="done" target="Element@476806215:1551388902692"/>
+<exit_state name="Java Exception-any" target="Element@1523213174:1551929257448"/>
+</exit_states>
 </element>
 </page>
