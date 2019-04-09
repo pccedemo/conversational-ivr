@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <action_element id="Element@1237957736:1551388633009" name="Google_Transcription" version="6.0.1">
 <config>
+<log>
+<data create_when="Before" name="forking URL">{Data.Session.forking_url}</data>
+</log>
 <settings>
 <setting name="EndpointURL">{Data.Session.forking_url}</setting>
 <setting name="HTTPMethod">PUT</setting>
