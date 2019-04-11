@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1640523841:1554996127804" name="Set Chat Bot Token" version="6.0.1">
+<config>
+<settings>
+<setting name="ChatBotToken">if ({Data.Session.chatBotToken} === "") {
+    String("5dc044d7822d43a5839627427ed28935")
+} else {
+    String({Data.Session.chatBotToken})
+}</setting>
+</settings>
+</config>
+</action_element>

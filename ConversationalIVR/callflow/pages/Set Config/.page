@@ -24,7 +24,7 @@
 <element height="46" id="Element@80690494:1551929133820" name="Has_Language_Config" type="Decision" width="226" x="239" y="292">
 <exit_states>
 <exit_state name="no config" target="Element@1102951401:1551929133820"/>
-<exit_state name="has config" target="Element@896204326:1554994923876"/>
+<exit_state name="has config" target="Element@1640523841:1554996127804"/>
 </exit_states>
 </element>
 <element height="46" id="Element@1539630660:1551929133820" name="Set_Google_TTS_Audio_Path" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="200" x="501" y="467">
@@ -49,7 +49,7 @@
 </element>
 <element height="46" id="Element@1102951401:1551929133820" name="Set_Default_Language" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="166" x="29" y="295">
 <exit_states>
-<exit_state name="done" target="Element@896204326:1554994923876"/>
+<exit_state name="done" target="Element@1640523841:1554996127804"/>
 </exit_states>
 </element>
 <element height="46" id="Element@1802627514:1551929133820" name="Build_Transcribe_Options" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="184" x="505" y="540">
@@ -62,13 +62,7 @@
 <exit_state name="done" target="Element@1539630660:1551929133820"/>
 </exit_states>
 </element>
-<element height="46" id="Element@896204326:1554994923876" name="Has_Token" type="Decision" width="108" x="297" y="378">
-<exit_states>
-<exit_state name="no config" target="Element@1103864763:1554995121613"/>
-<exit_state name="has config" target="Element@225355703:1551929133820"/>
-</exit_states>
-</element>
-<element height="46" id="Element@1103864763:1554995121613" name="Set_Default_Token" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="147" x="35" y="378">
+<element height="46" id="Element@1640523841:1554996127804" name="Set Chat Bot Token" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="151" x="263" y="374">
 <exit_states>
 <exit_state name="done" target="Element@225355703:1551929133820"/>
 </exit_states>
