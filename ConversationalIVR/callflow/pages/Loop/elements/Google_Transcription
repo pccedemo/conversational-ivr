@@ -3,6 +3,8 @@
 <config>
 <log>
 <data create_when="Before" name="forking URL">{Data.Session.forking_url}</data>
+<data create_when="After" name="response">{Data.Element.Google_Transcription.response_body}</data>
+<data create_when="After" name="status">{Data.Element.Google_Transcription.status_code}</data>
 </log>
 <settings>
 <setting name="EndpointURL">{Data.Session.forking_url}</setting>

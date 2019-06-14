@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <action_element id="Element@876520630:1551388633009" name="Conversation_Message" version="6.0.1">
 <config>
+<log>
+<data create_when="After" name="response">{Data.Element.Conversation_Message.response_body}</data>
+<data create_when="After" name="status">{Data.Element.Conversation_Message.status_code}</data>
+</log>
 <settings>
 <setting name="EndpointURL">https://branding.dcloud.cisco.com/api/v1/conversation</setting>
 <setting name="HTTPMethod">GET</setting>
