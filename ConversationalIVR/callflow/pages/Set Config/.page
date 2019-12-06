@@ -62,7 +62,7 @@
 <exit_state name="done" target="Element@1539630660:1551929133820"/>
 </exit_states>
 </element>
-<element height="46" id="Element@1640523841:1554996127804" name="Set Chat Bot Token" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="151" x="263" y="374">
+<element height="46" id="Element@1640523841:1554996127804" name="Set_Project_ID" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="151" x="263" y="374">
 <exit_states>
 <exit_state name="done" target="Element@225355703:1551929133820"/>
 </exit_states>

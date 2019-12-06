@@ -8,7 +8,7 @@
 <settings>
 <setting name="EndpointURL">https://branding.dcloud.cisco.com/api/v1/conversation</setting>
 <setting name="HTTPMethod">GET</setting>
-<setting name="Parameters">'transcript':'{Data.Session.caller_transcript}','language':'{LocalVar.LanguageCode}','sessionId':'{Data.Session.chatSessionId}','token':'{LocalVar.ChatBotToken}'</setting>
+<setting name="Parameters">'transcript':'{Data.Session.caller_transcript}','language':'{LocalVar.LanguageCode}','sessionId':'{Data.Session.chatSessionId}','projectId':'{LocalVar.ProjectId}'</setting>
 <setting name="ignoreCertificateValidation">true</setting>
 <setting name="requireHttpAuthentication">false</setting>
 <setting name="headers"/>

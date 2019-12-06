@@ -22,6 +22,7 @@
 <data create_when="After" name="ttsEngine">{Data.Element.Get_User_Demo_Config.ttsEngine}</data>
 <data create_when="After" name="languageCode">{Data.Element.Get_User_Demo_Config.languageCode}</data>
 <data create_when="After" name="chatBotToken">{Data.Element.Get_User_Demo_Config.chatBotToken}</data>
+<data create_when="After" name="projectId">{Data.Element.Get_User_Demo_Config.gcpProjectId}</data>
 </session_data>
 <local_events>
 <local_event>
