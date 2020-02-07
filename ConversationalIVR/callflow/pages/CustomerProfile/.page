@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1888227939:1562148826556" name="CustomerProfile" version="6.0.1">
+<element height="46" id="Element@1599889346:1562149094481" name="CustomerProfile" type="Page Entry" width="136" x="40" y="12">
+<exit_states>
+<exit_state name="next" target="Element@1403605592:1562149400564"/>
+</exit_states>
+</element>
+<element height="46" id="Element@2131693643:1562149094465" name="VerticalConfig" type="Page Connector" width="125" x="45" y="264">
+<page_connector target="Element@331286548:1562149292562">VerticalConfig<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@986778966:1562149094465" name="dCloud_Customer_Lookup" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="191" x="12" y="180">
+<exit_states>
+<exit_state name="done" target="Element@2131693643:1562149094465"/>
+<exit_state name="Java Exception-Any" target="Element@2131693643:1562149094465">
+<bendpoint>
+<dim1 x="236" y="-1"/>
+<dim2 x="236" y="-85"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="236" y="83"/>
+<dim2 x="236" y="-1"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@1403605592:1562149400564" name="SetFakeCustomer" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="142" x="37" y="96">
+<exit_states>
+<exit_state name="done" target="Element@986778966:1562149094465"/>
+</exit_states>
+</element>
+</page>

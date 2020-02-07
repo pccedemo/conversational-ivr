@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<action_element id="Element@458855370:1552019024604" name="Copy_2_of_Set_TTS" version="6.0.1">
-<config>
-<settings>
-<setting name="tts">encodeURIComponent("Sorry, there was an error with the cloud service. Please try again later. Goodbye.")</setting>
-</settings>
-</config>
-</action_element>

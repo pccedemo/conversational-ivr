@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<action_element id="Element@225355703:1551929133820" name="Set_User_Language" version="6.0.1">
-<config>
-<settings>
-<setting name="LanguageCode">{Data.Session.languageCode}</setting>
-</settings>
-</config>
-</action_element>

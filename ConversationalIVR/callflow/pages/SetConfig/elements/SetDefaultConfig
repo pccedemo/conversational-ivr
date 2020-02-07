@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1640523841:1554996127804" name="SetDefaultConfig" version="6.0.1">
+<config>
+<log>
+<data create_when="" name="ttsEngine">{LocalVar.ttsEngine}</data>
+<data create_when="" name="ttsVoice">{LocalVar.ttsVoice}</data>
+<data create_when="" name="languageCode">{LocalVar.languageCode}</data>
+</log>
+<settings>
+<setting name="ttsEngine">if ({Data.Session.ttsEngine} === "")
+{
+    String("nuance")
+} else
+{
+    String({Data.Session.ttsEngine})
+}</setting>
+<setting name="ttsVoice">if ({Data.Session.ttsVoice} === "")
+{
+    String("female")
+} else
+{
+    String({Data.Session.ttsVoice})
+}</setting>
+<setting name="languageCode">if ({Data.Session.languageCode} === "")
+{
+    String("en-US")
+} else
+{
+    String({Data.Session.languageCode})
+}</setting>
+</settings>
+<session_data>
+<data create_when="After" name="ttsEngine">{LocalVar.ttsEngine}</data>
+<data create_when="After" name="ttsVoice">{LocalVar.ttsVoice}</data>
+<data create_when="After" name="languageCode">{LocalVar.languageCode}</data>
+</session_data>
+</config>
+</action_element>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@317122568:1562338187803" name="SetReturnVars_Error" version="6.0.1">
+<config>
+<settings>
+<setting name="maintainer"/>
+<setting name="language"/>
+<setting name="encoding"/>
+<setting name="default_audio_path"/>
+<setting name="remove_session_data"/>
+</settings>
+<session_data>
+<data create_when="After" name="caller_input">error</data>
+<data create_when="After" name="context_tag">Conversational IVR Error</data>
+<data create_when="After" name="context_note">ttsEngine={Data.Session.ttsEngine}, ttsVoice={Data.Session.ttsVoice}, languageCode={Data.Session.languageCode}, chatBotToken={Data.Session.chatBotToken}</data>
+<data create_when="After" name="external_vxml_0">{Data.Session.first_name} {Data.Session.last_name}</data>
+<data create_when="After" name="external_vxml_1">Conversational IVR Error</data>
+<data create_when="After" name="external_vxml_2">Engine={Data.Session.ttsEngine}, Voice={Data.Session.ttsVoice}, Language={Data.Session.languageCode}</data>
+</session_data>
+</config>
+</action_element>

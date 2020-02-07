@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1241368718:1562149254827" name="VerticalConfig" version="6.0.1">
+<element height="46" id="Element@1842713146:1562149292562" name="Get_Vertical_Config" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="153" x="31" y="264">
+<exit_states>
+<exit_state name="done" target="Element@1930217434:1562149292562"/>
+<exit_state name="Java Exception-Any" target="Element@1654561726:1562149292562"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1930217434:1562149292562" name="Set_Vertical_ID" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="126" x="45" y="348">
+<exit_states>
+<exit_state name="done" target="Element@110636974:1562149292562"/>
+</exit_states>
+</element>
+<element height="46" id="Element@597397909:1562149292562" name="SetConfig" type="Page Connector" width="137" x="518" y="264">
+<page_connector target="Element@640506703:1551929083538">SetConfig<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@418902856:1562149292562" name="GetSessionConfiguration_2" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="192" x="271" y="96">
+<exit_states>
+<exit_state name="done" target="Element@968891735:1562149292562">
+<bendpoint>
+<dim1 x="0" y="83"/>
+<dim2 x="260" y="-1"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Java Exception-Any" target="Element@2047701460:1562149292562"/>
+</exit_states>
+</element>
+<element height="46" id="Element@273483688:1562149292562" name="SetConfig" type="Page Connector" width="105" x="55" y="516">
+<page_connector target="Element@640506703:1551929083538">SetConfig<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@2047701460:1562149292562" name="SetConfig" type="Page Connector" width="137" x="518" y="96">
+<page_connector target="Element@640506703:1551929083538">SetConfig<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@110636974:1562149292562" name="Parse_Vertical_Config" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="163" x="26" y="432">
+<exit_states>
+<exit_state name="done" target="Element@273483688:1562149292562"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1251955067:1562149292562" name="GetSessionConfiguration" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="181" x="17" y="96">
+<exit_states>
+<exit_state name="done" target="Element@968891735:1562149292562"/>
+<exit_state name="Java Exception-Any" target="Element@418902856:1562149292562"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1654561726:1562149292562" name="Get_Vertical_Config_2" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="164" x="271" y="264">
+<exit_states>
+<exit_state name="done" target="Element@1930217434:1562149292562">
+<bendpoint>
+<dim1 x="0" y="83"/>
+<dim2 x="245" y="-1"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Java Exception-Any" target="Element@597397909:1562149292562"/>
+</exit_states>
+</element>
+<element height="46" id="Element@968891735:1562149292562" name="ParseSessionConfiguration" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="191" x="12" y="180">
+<exit_states>
+<exit_state name="done" target="Element@1842713146:1562149292562"/>
+</exit_states>
+</element>
+<element height="46" id="Element@331286548:1562149292562" name="VerticalConfig" type="Page Entry" width="125" x="45" y="12">
+<exit_states>
+<exit_state name="next" target="Element@1251955067:1562149292562"/>
+</exit_states>
+</element>
+</page>

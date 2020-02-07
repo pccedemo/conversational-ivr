@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@110636974:1562149292562" name="Parse_Vertical_Config" version="6.0.1">
+<config>
+<log>
+<data create_when="After" name="ttsEngine">{LocalVar.ttsEngine}</data>
+<data create_when="After" name="ttsVoice">{LocalVar.ttsVoice}</data>
+<data create_when="After" name="languageCode">{LocalVar.languageCode}</data>
+<data create_when="After" name="projectId">{LocalVar.projectId}</data>
+</log>
+<settings>
+<setting name="ttsEngine">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.ttsEngine");
+String(ret);</setting>
+<setting name="ttsVoice">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.ttsVoice");
+String(ret);</setting>
+<setting name="languageCode">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.languageCode");
+String(ret);</setting>
+<setting name="projectId">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.gcpProjectId");
+String(ret);</setting>
+</settings>
+<session_data>
+<data create_when="After" name="ttsEngine">{LocalVar.ttsEngine}</data>
+<data create_when="After" name="ttsVoice">{LocalVar.ttsVoice}</data>
+<data create_when="After" name="languageCode">{LocalVar.languageCode}</data>
+<data create_when="After" name="projectId">{LocalVar.projectId}</data>
+</session_data>
+</config>
+</action_element>

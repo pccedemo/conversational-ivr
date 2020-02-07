@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<action_element id="Element@1102951401:1551929133820" name="Set_Default_Language" version="6.0.1">
-<config>
-<settings>
-<setting name="LanguageCode">String("en-US")</setting>
-</settings>
-</config>
-</action_element>
