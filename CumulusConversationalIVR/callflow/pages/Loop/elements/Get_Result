@@ -4,7 +4,7 @@
 <settings>
 <setting name="transcript">importPackage(com.audium.server.cvpUtil);
 var ret = JSONPathUtil.eval({Data.Element.Google_Transcription.response_body}, "$.transcript");
-String(ret);
+encodeURIComponent(ret);
 </setting>
 <setting name="error">importPackage(com.audium.server.cvpUtil);
 var ret = JSONPathUtil.eval({Data.Element.Google_Transcription.response_body}, "$.error");
